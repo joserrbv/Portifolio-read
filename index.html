@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=dev, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/822ad036aa.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/index.css" />
     <title>Portifólio</title>
     <style>
@@ -18,6 +19,11 @@
         background-image: url("fundo.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+      }
+
+      a {
+        text-decoration: none;
+        color:white;
       }
 
       .mother {
@@ -72,7 +78,7 @@
 
       .contact {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;       
         margin-top: 10%;
@@ -83,17 +89,36 @@
         height: 200px;
         border-radius: 10px;
 
-        h1 {
+       
 
-          margin-bottom: 10%;
-          width: 100%;
-          border-bottom: 3px solid yellowgreen;
-        }
-
+       left{
         a, h3 {
           margin-bottom: 5%;
         }
+       } 
+
+       
       }
+      .top {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+
+        h1 {
+          border-bottom: 1px solid greenyellow;
+        }  
+       }
+
+       .bottom {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+       }
+
+       .right {
+        font-size: 40px;
+       }
+
     </style>
   </head>
   <body>
@@ -114,19 +139,27 @@
         <img id="picture" src="./profile-pic.png" alt="" srcset="" />
       </div>
       <div class="contact">
-        <div class="left">
-          <h1>Contato:</h1>
-
-          <h3>Telefone</h3>
-          <a>95 99124-3646</a>
-          <h3>Email:</h3>
-          <a>josequeiroz40@gmail.com</a>
+        <div class="top">
+          <h1>Contato:</h1> <h1>Social:   </h1>
         </div>
+        <div class="bottom">
+          <div class="left">
+          
 
-        <div class="right">
-          <h1>Social:   </h1>
-          <p></p>
+            <h3>Telefone</h3>
+            <a>95 99124-3646</a>
+            <h3>Email:</h3>
+            <a>josequeiroz40@gmail.com</a>
+          </div>
+  
+          <div class="right">            
+           <a href="https://www.linkedin.com/in/jose-queiroz-3aabb6130/"> <i class="fa-brands fa-linkedin"></i> </a>
+           <a href="https://www.github.com/joserrbv"> <i class="fa-brands fa-github"></i> </a>
+           <a href="https://wa.me/5595991243646"> <i class="fa-brands fa-whatsapp"></i> </a>
+            <p></p>
+          </div>
         </div>
+        
       </div>
     </div>
   </body>
