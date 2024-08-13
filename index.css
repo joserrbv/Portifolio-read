@@ -111,14 +111,9 @@
     font-size: 40px;
    }
 
-   @media (max-width: 375px) {
-    #picture {
-        width: 300px;
-    }
-    .midle {
-        text-align: center;
-    }
-  }
+   select {
+    display: none;
+   }
 
   @media (max-width: 414px) {
     #picture {
